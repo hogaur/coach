@@ -9,7 +9,7 @@ x=[]
 y=[]
 i=0
 while i<2 do
-  puts "enter first point"
+  puts "enter the point" 
   x[i]=gets
   y[i]=gets
   i=i+1
