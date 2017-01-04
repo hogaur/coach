@@ -1,19 +1,22 @@
-def dist x,y
-  diff1=x[0].to_f - x[1].to_f
-  diff2=y[0].to_f - y[1].to_f
+class Point
+def initialize (x,y)
+@self_x=x
+@self_y=y
+end
+def dist(second)
+  puts @self_x
+  puts @self_y
+  puts @second_x
+  puts @second_y
+  diff1=@self_x.to_f - @second_x.to_f
+  diff2=@self_y.to_f - @second_y.to_f
   a=diff1**2 + diff2**2
   distance = a.to_f ** 0.5
   return distance
 end
-x=[]
-y=[]
-i=0
-while i<2 do
-  puts "enter the point" 
-  x[i]=gets
-  y[i]=gets
-  i=i+1
 end
-distance= dist x,y
+first_point=Point.new 1,2
+second_point=Point.new 3,5
+distance=first_point.dist(second_point)
 puts distance
 
