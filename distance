@@ -1,0 +1,14 @@
+x=[]
+y=[]
+i=0
+while i<2 do
+  puts "enter first point"
+  x[i]=gets
+  y[i]=gets
+  i=i+1
+end
+diff1=x[0].to_f - x[1].to_f
+diff2=y[0].to_f - y[1].to_f
+a=diff1**2 + diff2**2
+distance = a.to_f ** 0.5
+puts distance
