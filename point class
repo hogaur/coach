@@ -1,0 +1,13 @@
+class Point
+  def initialize(array)
+    @x=array[0]
+    @y=array[1]
+  end
+def dist(second)
+  diff1=@x.to_f - second[0].to_f
+  diff2=@y.to_f - second[1].to_f
+  a=diff1**2 + diff2**2
+  distance = a.to_f ** 0.5
+  return distance
+end
+end
