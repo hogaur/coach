@@ -1,0 +1,8 @@
+require_relative 'point'
+first_point=[1,2]
+second_point=[1,2]
+first=Point.new(first_point)
+second=Point.new(second_point)
+distance=first.dist(second_point)
+puts distance
+
