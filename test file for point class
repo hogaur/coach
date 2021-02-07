@@ -1,0 +1,10 @@
+require_relative 'point'
+require 'test/unit'
+class Testdist<Test::Unit::TestCase
+def test_simple
+first_point=[1,2]
+second_point=[1,2]
+first=Point.new(first_point)
+assert_equal(2.0,first.dist(second_point).to_f)
+end
+end
